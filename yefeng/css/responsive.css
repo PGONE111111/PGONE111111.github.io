@@ -1,0 +1,339 @@
+/* ============================================
+   Yefeng RP - 响应式设计
+   全设备完美适配
+   ============================================ */
+
+/* === 平板设备 (≤1024px) === */
+@media (max-width: 1024px) {
+    :root {
+        --nav-height: 70px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .main-card {
+        grid-column: 1 / -1;
+    }
+
+    .guide-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sponsor-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .sponsor-card.featured {
+        transform: scale(1.02);
+    }
+
+    .sponsor-card.featured:hover {
+        transform: scale(1.02) translateY(-6px);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .community-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carousel-container {
+        height: 320px;
+    }
+
+    .slide-content h3 {
+        font-size: 1.6rem;
+    }
+}
+
+/* === 平板竖屏 (≤768px) === */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .btn-ip-copy .copy-hint {
+        display: none;
+    }
+
+    .btn-ip-copy {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+
+    section {
+        padding: 60px 16px;
+    }
+
+    .section-hero {
+        padding: 100px 16px 60px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .main-card {
+        grid-column: 1 / -1;
+    }
+
+    .guide-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .sponsor-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        gap: 20px;
+    }
+
+    .sponsor-card.featured {
+        transform: none;
+    }
+
+    .sponsor-card.featured:hover {
+        transform: translateY(-6px);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .community-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .carousel-container {
+        height: 260px;
+    }
+
+    .slide-bg {
+        padding: 30px;
+    }
+
+    .slide-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .slide-content p {
+        font-size: 0.9rem;
+    }
+
+    .news-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-links {
+        gap: 32px;
+    }
+
+    .stat-big-number .big-num {
+        font-size: 2.8rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* === 手机设备 (≤480px) === */
+@media (max-width: 480px) {
+    :root {
+        --nav-height: 64px;
+    }
+
+    .nav-container {
+        padding: 0 4px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .logo-sub {
+        font-size: 0.5rem;
+    }
+
+    .btn-ip-copy {
+        padding: 6px 10px;
+        gap: 4px;
+    }
+
+    .ip-icon {
+        font-size: 0.8rem;
+    }
+
+    .ip-text {
+        font-size: 0.7rem;
+    }
+
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 6px 14px;
+    }
+
+    .title-main {
+        font-size: 3rem;
+    }
+
+    .title-sub {
+        font-size: 1rem;
+    }
+
+    .hero-desc {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .stat-big-number .big-num {
+        font-size: 2.4rem;
+    }
+
+    .stat-value {
+        font-size: 1.6rem;
+    }
+
+    .guide-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .guide-card {
+        padding: 24px 18px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        max-width: 280px;
+    }
+
+    .community-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .carousel-container {
+        height: 220px;
+        border-radius: var(--radius-lg);
+    }
+
+    .slide-bg {
+        padding: 20px;
+    }
+
+    .slide-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .slide-content p {
+        font-size: 0.8rem;
+    }
+
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1.2rem;
+    }
+
+    .carousel-btn.prev { left: 10px; }
+    .carousel-btn.next { right: 10px; }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .sponsor-grid {
+        max-width: 320px;
+    }
+
+    .tier-price {
+        font-size: 2rem;
+    }
+
+    .footer {
+        padding: 40px 16px 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .toast {
+        bottom: 20px;
+        padding: 12px 20px;
+        font-size: 0.8rem;
+    }
+}
+
+/* === 大屏幕优化 (≥1440px) === */
+@media (min-width: 1440px) {
+    .carousel-container {
+        height: 500px;
+    }
+
+    .slide-content h3 {
+        font-size: 2.8rem;
+    }
+
+    .stats-grid {
+        gap: 28px;
+    }
+
+    .sponsor-grid {
+        gap: 36px;
+    }
+}
+
+/* === 减少动画偏好 === */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
